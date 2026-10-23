@@ -1,0 +1,33 @@
+# SAMD21 v0.20 pass-through verification
+# Temporary USB loopback build: USB in -> forward_message(..., MIDI_TR_USB) -> USB out.
+# Board: Arduino/Genuino Zero, /dev/ttyACM0, ALSA port hw:2,0,0.
+# Tool: amidi -d -a -c -t 5  (dump), amidi -S  (send), 250 ms between messages.
+# Every sent message came back byte-for-byte, including:
+#   notes/CC on channel 1 and 16, Program Change, Channel Pressure, Pitch Bend,
+#   Clock, Start, Tick, Stop, Active Sensing,
+#   MTC Quarter Frame, Song Position, Song Select, Tune Request, SysEx.
+# The raw received bytes follow.
+#
+
+90 24 7F
+80 24 00
+9F 30 7F
+8F 30 00
+B0 07 64
+BF 07 32
+C0 05
+CF 0A
+D0 40
+DF 20
+E0 00 40
+EF 7F 7F
+F8
+FA
+F9
+FC
+FE
+F1 12
+F2 01 02
+F3 05
+F6
+F0 7E 00 06 01 F7

@@ -1,0 +1,9 @@
+# v0.17 fixed-delay sweep, -O2, 4 boards x 7 columns, no keyboard
+# SETTLE_uS, loops/ms (two reports)
+0, Loops per mS = 7.14 Loops per mS = 7.14 
+1, Loops per mS = 4.62 Loops per mS = 4.62 
+2, Loops per mS = 4.08 Loops per mS = 4.08 
+4, Loops per mS = 3.32 Loops per mS = 3.32 
+6, Loops per mS = 2.79 Loops per mS = 2.79 
+8, Loops per mS = 2.42 Loops per mS = 2.42 
+10, Loops per mS = 2.12 Loops per mS = 2.12 

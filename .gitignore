@@ -1,0 +1,31 @@
+# Arduino / Teensy build artifacts
+*.hex
+*.elf
+*.bin
+*.map
+*.lst
+*.o
+*.d
+*.a
+build/
+Debug/
+Release/
+
+# STM32Cube generated trees (not kept)
+Drivers/
+Middlewares/
+.settings/
+.mxproject
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.vscode/
+
+# Large test captures
+*.log
+
+# Source document kept locally; only the PDF is published
+docs/switch-matrix-explained.odt
